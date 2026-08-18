@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id           Int      @id @default(autoincrement())
+  name         String
+  email        String   @unique
+  passwordHash String?
+  apiKey       String   @unique
+  createdAt    DateTime @default(now())
+
+  requests     ApiRequest[]
+}
+
+model ApiRequest {
+  id            Int      @id @default(autoincrement())
+  userId        Int
+  endpoint      String
+  statusCode    Int
+  responseTime  Int
+
+  model         String?
+  route         String?
+
+  inputTokens   Int?
+  outputTokens  Int?
+  totalTokens   Int?
+
+  estimatedCost Float?
+
+  createdAt     DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+}
