@@ -78,3 +78,24 @@ https://github.com/shivammishra27/NexusGate
                            │
                            ▼
                 Response + Usage Metrics
+---
+
+## ?? Screenshots
+
+### ?? Signup
+
+![NexusGate Signup](docs/screenshots/signup.png)
+
+### ?? Login
+
+![NexusGate Login](docs/screenshots/login.png)
+
+### ?? Dashboard
+
+![NexusGate Dashboard](docs/screenshots/dashboard.png)
+
+### ?? AI Playground
+
+![NexusGate AI Playground](docs/screenshots/playground.png)
+
+---
