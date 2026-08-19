@@ -9,7 +9,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://nexusgate-frontend.onrender.com"
+      "https://nexusgate-frontend-2.onrender.com"
     ]
   })
 );
