@@ -40,7 +40,7 @@ function Dashboard({ apiKey, onLogout, onPlayground }) {
           historyResponse
         ] = await Promise.all([
           fetch(
-            "http://localhost:3000/api/dashboard/stats",
+            "https://nexusgate-api-cr5w.onrender.com/api/dashboard/stats",
             {
               method: "GET",
               headers
@@ -48,7 +48,7 @@ function Dashboard({ apiKey, onLogout, onPlayground }) {
           ),
 
           fetch(
-            "http://localhost:3000/api/dashboard/latest",
+            "https://nexusgate-api-cr5w.onrender.com/api/dashboard/latest",
             {
               method: "GET",
               headers
@@ -56,7 +56,7 @@ function Dashboard({ apiKey, onLogout, onPlayground }) {
           ),
 
           fetch(
-            "http://localhost:3000/api/dashboard/history",
+            "https://nexusgate-api-cr5w.onrender.com/api/dashboard/history",
             {
               method: "GET",
               headers

@@ -28,7 +28,7 @@ function Playground({ apiKey, onBack }) {
       setResponse("");
 
       const result = await fetch(
-        "http://localhost:3000/api/generate",
+        "https://nexusgate-api-cr5w.onrender.com/api/generate",
         {
           method: "POST",
 

@@ -22,7 +22,7 @@ function Login({ onLogin, onSignup }) {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:3000/api/auth/login",
+        "https://nexusgate-api-cr5w.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {
